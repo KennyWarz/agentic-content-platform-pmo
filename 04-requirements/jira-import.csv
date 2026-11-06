@@ -1,0 +1,57 @@
+Issue Id,Issue Type,Summary,Parent Id,Priority,Story Points,Component,Team,Labels,Description
+1,Epic,CC-02 Generate a compliant HCP email draft,,Highest,,Content Composer,Mktg,regulatory,"As a brand marketer, I want Content Composer to produce a first draft of an HCP email from my brief, using only approved claims, so I can get to MLR submission faster with fewer rejections."
+2,Story,CC-02-01 Start a draft from a structured Workfront brief,1,High,3,Integration: Workfront,DT,,"As a brand marketer, I want to start a Composer draft from my Workfront brief, so that I don't have to re-enter campaign details.
+
+AC1 Given a complete brief, When status is set to Ready for Composer, Then a draft request is created within 2 minutes and linked on the Workfront task.
+AC2 Given a brief missing the key message, When status is set to Ready for Composer, Then no request is created and the task shows the missing field."
+3,Story,CC-02-02 Retrieve only approved claims for the brief,1,Highest,5,Platform: Retrieval,DSML,ai-behavior regulatory,"As a brand marketer, I want the draft built only from approved claims for my brand, so that MLR doesn't reject it for unsupported statements.
+
+AC1 Given matching approved claims, When a request is processed, Then up to 5 claims are retrieved, each with a claim ID and at least one reference ID.
+AC2 Given an expired claim, When a request is processed, Then it is not retrieved.
+AC3 Given no matching claims, When a request is processed, Then no draft is generated and the marketer is told to contact Medical/Compliance."
+4,Story,CC-02-03 Generate an email draft with claims inserted verbatim,1,Highest,8,Content Composer,DSML,ai-behavior,"As a brand marketer, I want a complete email draft in our brand voice, so that I start from a near-final version.
+
+AC1 Given retrieved claims and brand standards, When the draft is generated, Then it has subject line, preheader, body and CTA, with every claim word-for-word and tagged with its claim ID.
+AC2 Given a valid request, Then the draft is shown within 60 seconds for 95% of requests.
+
+Evaluation criteria (on the evaluation set): groundedness 100%; claim fidelity 100%; on-brand >= 85%; usable with minor edits >= 70%; inter-rater kappa >= 0.6."
+5,Story,CC-02-04 Select approved images from AEM Assets,1,Medium,5,Integration: AEM Assets,DT,,"As a brand marketer, I want up to 3 suggested approved images, so that my draft is visually complete.
+
+AC1 Given brand images in AEM Assets, When images are suggested, Then only Approved assets with rights expiry after the send date are shown.
+AC2 Given an image with no rights expiry metadata, Then it is excluded."
+6,Story,CC-02-05 Block drafts that fail guardrail rules,1,Highest,8,Platform: Guardrails,DSML,guardrail ai-behavior regulatory,"As a compliance reviewer, I want every draft checked against approved guardrail rules before a marketer sees it, so that off-label or prohibited language never reaches MLR.
+
+AC1 Given a passing draft, Then it is released with status Passed guardrails.
+AC2 Given prohibited language, Then the draft is regenerated once; if it fails again the marketer sees the blocking rule ID.
+AC3 Given a clinical statement with no claim ID, Then it is flagged Unsupported claim and MLR submission is blocked until fixed.
+AC4 Given brief text that tries to override the agent's instructions, Then it is treated as content, no prohibited or unsupported statement is released, and the attempt is logged.
+
+Evaluation criteria: 0 harmful drafts released on the 40-brief red-team set; false-positive blocks <= 10%."
+7,Story,CC-02-06 Review a draft with sources visible,1,Highest,5,Content Composer,Mktg,regulatory,"As a brand marketer, I want to see which claim and reference supports each statement, so that I can check the draft quickly and trust it.
+
+AC1 Given a passed draft, When I open review, Then each claim is highlighted and shows claim text, ID and reference on hover.
+AC2 Given I edit non-claim copy, Then edits are saved and guardrails re-run; claim text is locked."
+8,Story,CC-02-07 Request a revision with feedback,1,Medium,3,Content Composer,DSML,ai-behavior,"As a brand marketer, I want to request a revision with plain-language feedback, so that I don't rewrite the draft myself.
+
+AC1 Given feedback is submitted, Then a new version is generated with the same approved claims and the previous version is kept in history.
+AC2 Given 5 prior revisions, Then further revisions are refused and a new request is offered."
+9,Story,CC-02-08 Submit an approved draft to Veeva PromoMats,1,Highest,8,Integration: Veeva PromoMats,DT,regulatory,"As a brand marketer, I want to submit my approved draft to MLR in one step, so that I don't build the review package by hand.
+
+AC1 Given a draft marked Approved for MLR, When I submit, Then a PromoMats document is created with draft, images and references, claims annotated, and the Workfront task moves to In MLR Review.
+AC2 Given I am not the brief owner, Then Submit to MLR is not available.
+AC3 Given a PromoMats API error, Then the draft stays Approved for MLR and I see a retry message with a reference number."
+10,Story,CC-02-09 Bring MLR feedback back into Workfront,1,Medium,5,Integration: Workfront,DT,,"As a brand marketer, I want MLR decisions and comments on my Workfront task, so that I don't check two systems.
+
+AC1 Given MLR sets Revise and resubmit, Then the task shows status and comments within 15 minutes and the draft reopens in Composer.
+AC2 Given MLR approves, Then the task moves to MLR Approved and the draft is locked from AI edits."
+11,Story,CC-02-10 Keep an audit trail for every generation,1,Highest,5,Platform: Audit,DSML,regulatory,"As a compliance reviewer, I want a complete record of how each draft was produced, so that we can answer any audit question.
+
+AC1 Given any generate/revise/check/submit action, Then an audit record stores timestamp, user, model version, prompt version, claim IDs, guardrail results and action.
+AC2 Given an attempt to edit or delete a record, Then it is refused and the attempt is logged.
+AC3 Given a Workfront task ID, Then a complete time-ordered audit export is produced."
+12,Story,CC-02-11 Gate every model or prompt change behind evaluation,1,Highest,5,Platform: Guardrails,DSML,ai-behavior regulatory,"As a compliance reviewer, I want any change to the model, prompts, retrieval settings or guardrail rules to pass the full evaluation before it reaches marketers, so that an update can't quietly make drafts less compliant.
+
+AC1 Given a new prompt version, When the evaluation and red-team sets run, Then it is released only if all CC-02-03 and CC-02-05 thresholds are met and no metric drops more than 5 points vs production.
+AC2 Given 1 harmful draft on the red-team set, Then the release is blocked and results are attached to the change ticket.
+AC3 Given the provider releases a new model version, Then production stays on the pinned version until the new one passes this gate.
+AC4 Given weekly sampling of 20 live drafts, When a metric is below threshold 2 weeks in a row, Then the TPM and DSML lead are alerted and a RAID issue is opened."
