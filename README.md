@@ -1,7 +1,5 @@
 # Agentic Content Platform: Program Setup Portfolio
 
-> **Portfolio sample, fictional scenario.** "Aurelis Pharma" and every person, team, date and number here are invented to show how I set up and run a technical program. Nothing here comes from any employer's or client's confidential data. The product names (Adobe Workfront, AEM Assets, Adobe Journey Optimizer, Veeva PromoMats) are real systems I reference as integration points. No vendor endorsement is implied.
-
 ## The scenario
 
 Aurelis Pharma's US Commercial Marketing team spends **weeks** taking a promotional asset from brief to approved: copywriting, agency rounds, and Medical/Legal/Regulatory (MLR) review in Veeva PromoMats. Leadership has funded an **Agentic AI Platform**. Its anchor module is **Content Composer**, an AI agent that drafts on-brand, claims-compliant first drafts from an approved claims library and routes them to human review.
@@ -57,3 +55,7 @@ All diagrams are [Mermaid](https://mermaid.js.org/) and render directly on GitHu
 **Kenneth Hwang**, Program Manager with 7+ years across AI/ML platform delivery, platform governance and Trust & Safety. I've set up Jira/Confluence structures for AI/ML module rollouts, written user stories and acceptance criteria for AI workflow features, and aligned delivery across North American, European and Asian teams. Bilingual English/Mandarin.
 
 📧 mykenneth64@gmail.com · 📍 San Mateo, CA
+
+---
+
+<sub>Adobe and Veeva product names are referenced as integration points; no vendor endorsement is implied. This repo contains no employer or client data.</sub>
