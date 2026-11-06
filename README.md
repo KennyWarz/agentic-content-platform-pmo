@@ -31,6 +31,8 @@ This repo is what I'd produce in the **first 3–4 weeks**.
 | 05 | [As-is / to-be workflow](05-process/as-is-to-be.md) | Current vs. future content workflow with human-in-the-loop (HITL) review points |
 | 06 | [Agent functional spec](06-agent-spec/agent-functional-spec.md) | Bounded agent design: inputs/outputs, retrieval (RAG) rules, prompt design with claim slots, tool permissions (MCP-ready), layered guardrails, failure modes, evaluation, build/buy/combine vs. Veeva AI and Adobe GenStudio, OWASP 2026 security mapping, cost and resilience |
 | 07 | [Integration map](07-integrations/integration-map.md) | Adobe Workfront, AEM Assets and Journey Optimizer + Veeva Vault PromoMats (incl. Veeva AI Quick Check): landscape, end-to-end sequence, system-to-requirement matrix, data and status mappings, spikes |
+| 08 | [Platform assessment](08-assessment/vendor-assessment.md) | Build, buy or combine across Adobe GenStudio, Adobe CX Enterprise Coworker, Veeva AI for PromoMats and specialist vendors: knock-outs (incl. model-change transparency), weighted rubric with scoring anchors, usage-based TCO, portability, evidence plan, worked example with sensitivity check, AI-specific contract terms |
+| 09 | [Business Requirements Document](09-brd/business-requirements.md) | Business problem, objectives, users, 14 business requirements (incl. business readiness and AI-assisted disclosure), compliance business rules, and a traceability matrix that surfaces 3 gaps |
 
 All diagrams are [Mermaid](https://mermaid.js.org/) and render directly on GitHub.
 
@@ -48,7 +50,7 @@ All diagrams are [Mermaid](https://mermaid.js.org/) and render directly on GitHu
 
 - [x] Tier 1: program setup, tracking, dependencies, stories, workflow
 - [x] Tier 2: agentic AI functional spec (prompts, retrieval, tools, guardrails); Adobe + Veeva integration map
-- [ ] Tier 3: next-gen content-AI vendor assessment with scoring rubric; Business Requirements Document (BRD)
+- [x] Tier 3: next-gen content-AI vendor assessment with scoring rubric; Business Requirements Document (BRD)
 
 ## About me
 

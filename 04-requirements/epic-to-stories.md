@@ -237,6 +237,7 @@ Scenario: Successful submission
   When I click "Submit to MLR"
   Then a PromoMats document is created with the draft, the selected images and every linked reference
   And each claim in the document is annotated with its reference
+  And the document is labeled "AI-assisted" with a summary of the claims and sources used and the model and prompt version
   And the Workfront task moves to "In MLR Review"
 
 Scenario: Only the brief owner can submit

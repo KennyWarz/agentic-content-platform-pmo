@@ -37,7 +37,7 @@ AC1 Given feedback is submitted, Then a new version is generated with the same a
 AC2 Given 5 prior revisions, Then further revisions are refused and a new request is offered."
 9,Story,CC-02-08 Submit an approved draft to Veeva PromoMats,1,Highest,8,Integration: Veeva PromoMats,DT,regulatory,"As a brand marketer, I want to submit my approved draft to MLR in one step, so that I don't build the review package by hand.
 
-AC1 Given a draft marked Approved for MLR, When I submit, Then a PromoMats document is created with draft, images and references, claims annotated, and the Workfront task moves to In MLR Review.
+AC1 Given a draft marked Approved for MLR, When I submit, Then a PromoMats document is created with draft, images and references, claims annotated, labeled AI-assisted with sources and model/prompt version, and the Workfront task moves to In MLR Review.
 AC2 Given I am not the brief owner, Then Submit to MLR is not available.
 AC3 Given a PromoMats API error, Then the draft stays Approved for MLR and I see a retry message with a reference number."
 10,Story,CC-02-09 Bring MLR feedback back into Workfront,1,Medium,5,Integration: Workfront,DT,,"As a brand marketer, I want MLR decisions and comments on my Workfront task, so that I don't check two systems.
