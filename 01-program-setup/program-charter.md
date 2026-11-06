@@ -1,7 +1,5 @@
 # Program Charter: Agentic AI Platform, Release 1 (Content Composer)
 
-> Fictional portfolio sample. All names, dates and targets are illustrative.
-
 | Field | Value |
 |---|---|
 | Program | Agentic AI Platform |

@@ -1,6 +1,6 @@
 # As-Is / To-Be: Promotional Content Workflow
 
-> Fictional portfolio sample. Shows the current process for one HCP email, the future process with Content Composer, and exactly where humans stay in control.
+> Shows the current process for one HCP email, the future process with Content Composer, and exactly where humans stay in control.
 
 ## 1. As-is (today)
 

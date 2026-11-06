@@ -1,6 +1,6 @@
 # Weekly Status Report
 
-> Fictional portfolio sample. Part 1 is the reusable template; Part 2 is a filled-in example week.
+> Part 1 is the reusable template; Part 2 is a filled-in example week.
 
 ---
 

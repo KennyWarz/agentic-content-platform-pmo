@@ -1,6 +1,6 @@
 # Jira & Confluence Structure
 
-> Fictional portfolio sample. This is the tooling design I'd stand up in the first week, before any stories are written.
+> This is the tooling design I'd stand up in the first week, before any stories are written.
 
 ## Design principles
 

@@ -1,6 +1,6 @@
 # Cross-Team Dependency Map & Roadmap
 
-> Fictional portfolio sample. IDs match the [RAID log](../02-tracking/raid-log.csv).
+> IDs match the [RAID log](../02-tracking/raid-log.csv).
 
 ## 1. Who needs what from whom
 

@@ -1,6 +1,6 @@
 # Business Requirements Document: Content Composer R1
 
-> Fictional portfolio sample. A BRD states **what the business needs and why**, in business language. The epics, stories and specs elsewhere in this repo describe **how** it gets built. Section 9 traces every requirement to the work that delivers it, and shows the gaps that tracing found.
+> A BRD states **what the business needs and why**, in business language. The epics, stories and specs elsewhere in this repo describe **how** it gets built. Section 9 traces every requirement to the work that delivers it, and shows the gaps that tracing found.
 
 ## 1. Document control
 

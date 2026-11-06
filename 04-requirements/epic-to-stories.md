@@ -1,6 +1,6 @@
 # Epic Decomposition: CC-02 Generate a Compliant HCP Email Draft
 
-> Fictional portfolio sample. Shows how I take a Product Manager's epic and break it into stories a developer can build and a tester can verify. The same stories are in [jira-import.csv](jira-import.csv).
+> Shows how I take a Product Manager's epic and break it into stories a developer can build and a tester can verify. The same stories are in [jira-import.csv](jira-import.csv).
 
 ## The epic, as handed over by the PM
 

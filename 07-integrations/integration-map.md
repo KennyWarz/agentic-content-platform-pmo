@@ -1,6 +1,6 @@
 # Content Stack Integration Map: Adobe + Veeva
 
-> Fictional portfolio sample. It maps the functional requirements onto the systems Content Composer has to work with. The Adobe and Veeva product names are real. The field names, lifecycle states and configuration shown here are **illustrative**: every company configures Workfront and Vault differently, so each mapping below is confirmed with the system owners in a spike before build.
+> It maps the functional requirements onto the systems Content Composer has to work with. The Adobe and Veeva product names are real. The field names, lifecycle states and configuration shown here are **illustrative**: every company configures Workfront and Vault differently, so each mapping below is confirmed with the system owners in a spike before build.
 
 ## 1. System landscape
 

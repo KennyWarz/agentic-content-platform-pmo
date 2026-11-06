@@ -1,6 +1,6 @@
 # Content-AI Platform Assessment: Build, Buy or Combine
 
-> Fictional portfolio sample. It shows **how I'd run** a platform assessment, not a verdict on any real product. Vendor capabilities in section 3 are summarized from public vendor materials and press coverage as of late 2026 (sources at the end), and every one has to be verified in demos and a proof of concept. **No real product is scored here.** The worked scoring example in section 6 uses anonymous options with made-up numbers to show the method.
+> It shows **how I'd run** a platform assessment, not a verdict on any real product. Vendor capabilities in section 3 are summarized from public vendor materials and press coverage as of late 2026 (sources at the end), and every one has to be verified in demos and a proof of concept. **No real product is scored here.** The worked scoring example in section 6 uses anonymous options with made-up numbers to show the method.
 
 | Field | Value |
 |---|---|

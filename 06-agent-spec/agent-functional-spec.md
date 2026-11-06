@@ -1,6 +1,6 @@
 # Agent Functional Spec: Content Composer (R1)
 
-> Fictional portfolio sample. This is the functional spec a BA writes *with* the DSML team. It says **what** the agent must do and **what it must never do**, so that DSML can choose **how**. Story IDs refer to [epic-to-stories.md](../04-requirements/epic-to-stories.md).
+> This is the functional spec a BA writes *with* the DSML team. It says **what** the agent must do and **what it must never do**, so that DSML can choose **how**. Story IDs refer to [epic-to-stories.md](../04-requirements/epic-to-stories.md).
 
 | Field | Value |
 |---|---|
